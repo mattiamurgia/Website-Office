@@ -1,0 +1,609 @@
+@import "Variable-custom";
+@import "rfs";
+@import "breakpoints";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  outline-style: none;
+  border-style: none;
+}
+
+// <!-- NAVBAR START -->
+.navbar {
+  z-index: 1000;
+  background-color: $white-color;
+
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+  }
+
+  .logo-white img {
+    max-width: toRem(100);
+    max-height: toRem(200);
+  }
+
+  .logo-black img {
+    max-width: toRem(100);
+    max-height: toRem(200);
+    position: relative;
+    right: toRem(116);
+  }
+
+  .navbar-nav {
+    li a {
+      font-weight: 400;
+      @include textProperty(16, black, $font-family-header);
+
+      @include media-breakpoint-up(lg) {
+        color: $white-color;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border: none !important;
+    border-radius: 0px !important;
+
+    li a {
+      margin: toRem(12);
+      font-weight: 400;
+      color: $p-color;
+    }
+  }
+
+  form {
+    button {
+      @include customButton;
+    }
+  }
+
+  .dropdown-item li {
+    color: black;
+  }
+}
+
+// <!-- NAVBAR FINISH -->
+
+// <!-- FIRST SECTION START -->
+.carousel-inner {
+  max-height: 80vmin !important;
+  position: relative;
+
+  .carousel-caption {
+    position: absolute;
+    top: 20%;
+  }
+
+  p {
+    letter-spacing: toRem(5);
+    @include textProperty(11, $white-color, $font-family-text);
+  }
+
+  h5 {
+    @include textProperty(30, $white-color, $font-family-text);
+
+    @include media-breakpoint-up(sm) {
+      @include font-size(5rem);
+    }
+  }
+
+  button {
+    @include customButton;
+  }
+}
+
+// <!-- FIRST SECTION FINISH -->
+
+// <!-- SECOND SECTION START -->
+.description-section {
+  .text {
+    &-title p {
+      font-weight: 700;
+      line-height: 1.62rem;
+      letter-spacing: 0.3rem;
+      @include textProperty(11, $sub-text, $font-family-text)
+    }
+
+    &-head h2 {
+      font-weight: 400;
+      line-height: toRem(70);
+      @include textProperty(48, black, $font-family-header);
+    }
+
+    &-sub p {
+      font-weight: 500;
+      margin-top: toRem(20);
+      @include textProperty(16, $p-color, $font-family-text);
+    }
+  }
+}
+
+.accordion {
+  .accordion-header button:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+  }
+
+  .accordion-header button.collapsed:after {
+    content: "\f067";
+  }
+
+  .accordion-button {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .accordion-item {
+    &:not(.collapsed) {
+      width: 100%;
+      border: none;
+      border-bottom: 0.5px $p-color solid;
+    }
+
+    &:after {
+      border-bottom: 2px red solid;
+    }
+  }
+
+  .accordion-item h2 button {
+    line-height: 1.1em;
+    padding: toRem(22) toRem(10) toRem(25) toRem(0);
+    font-weight: 500;
+    @include textProperty(20, black, $font-family-header);
+  }
+
+  .accordion-body {
+    font-weight: 400;
+    line-height: 1.62rem;
+    @include textProperty(16, $p-color, $font-family-text);
+    border-top: 2px $blue-violet solid;
+  }
+}
+
+// <!-- SECOND SECTION FINISH -->
+
+// < !-- THIRD SECTION START -->
+.box-img {
+  background-image: url(Foto/Background-Image/virtual.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+
+  button {
+    width: toRem(200);
+    height: toRem(200);
+    border-radius: 50%;
+    background-color: $blue-violet;
+    border: none !important;
+    @include textProperty(34, $white-color, $font-family-header);
+    @include font-size(2rem);
+
+    &:hover {
+      background-color: $blue-violet;
+      scale: 1.2;
+    }
+  }
+}
+
+.modal {
+  margin-top: toRem(150);
+
+  .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+// < !-- THIRD SECTION FINISH -->
+
+// < !-- FIVE SECTION START -->
+.description-five {
+  .text {
+    &-title p {
+      font-weight: 700;
+      letter-spacing: .3rem;
+      line-height: 1.62rem;
+      @include textProperty(11, $sub-text, $font-family-text)
+    }
+
+    &-head h2 {
+      font-weight: 400;
+      line-height: 2rem;
+      @include textProperty(34, black, $font-family-header)
+    }
+
+    &-sub p {
+      font-weight: 400;
+      line-height: 1.62rem;
+      @include textProperty(16, $p-color, $font-family-text)
+    }
+  }
+}
+
+.card {
+  max-width: 18rem;
+  margin-bottom: toRem(40);
+  border: none !important;
+  border-radius: 0px !important;
+
+  @include media-breakpoint-up(md) {
+    max-width: 20rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    max-width: 30rem;
+  }
+
+  .card-body {
+    border-radius: 0px;
+
+    h5 {
+      font-weight: 500;
+      line-height: 1.1rem;
+      margin: toRem(30) 0 0;
+      @include textProperty(20, black, $font-family-header);
+    }
+
+    p {
+      font-weight: 700;
+      line-height: 1.62rem;
+      margin: toRem(10) 0;
+      @include textProperty(11, $p-color, $font-family-text);
+    }
+  }
+
+  .card-img-top {
+    border-radius: 0px;
+  }
+}
+
+// < !-- FIVE SECTION FINISH -->
+
+// < !-- SIX SECTION START -->
+.bg-six-section,
+.footer-bg {
+  background-color: #282828;
+}
+
+.img-container {
+  padding: 0px !important;
+}
+
+.box-image-six {
+  img {
+    max-width: 100%;
+    min-height: 100%
+  }
+}
+
+.six-section-description {
+  padding: toRem(15);
+  overflow-wrap: break-word;
+  max-width: toRem(600);
+  margin: toRem(8) 0;
+
+  .text-title p {
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    @include textProperty(11, $sub-text, $font-family-text);
+  }
+
+  .text-head h2 {
+    font-weight: 300;
+    line-height: 2.5rem;
+    @include textProperty(34, $white-color, $font-family-header);
+    @include font-size(2.12rem);
+  }
+
+  button {
+    @include customButton;
+  }
+}
+
+// < !-- SIX SECTION FINISH -->
+
+// < !-- SEVEN SECTION START -->
+.description-seven-section {
+  max-width: toRem(600);
+
+  .text {
+    &-title p {
+      font-weight: 700;
+      letter-spacing: .3rem;
+      line-height: 1.62rem;
+      @include textProperty(11, $sub-text, $font-family-text);
+    }
+
+    &-head h2 {
+      font-weight: 400;
+      line-height: 1.12rem;
+      overflow-wrap: break-word;
+      @include textProperty(55, black, $font-family-header);
+      @include font-size(3.43rem);
+    }
+
+    &-sub p {
+      font-weight: 400;
+      line-height: 1.62rem;
+      margin: toRem(6) 0;
+      @include textProperty(19, $p-color, $font-family-text);
+    }
+  }
+}
+
+.card-timetables {
+  .card {
+    max-width: 25rem;
+
+    .card-body {
+      position: relative;
+      left: toRem(10);
+      margin: toRem(15);
+
+      h5 {
+        font-weight: 500;
+        line-height: 1.12rem;
+        @include textProperty(25, black, $font-family-header);
+      }
+
+      :nth-child(2) {
+        position: relative;
+        font-weight: 400;
+        line-height: 1.62rem;
+        margin: toRem(10) toRem(5);
+        @include textProperty(16, $p-color, $font-family-text);
+
+        &::before {
+          position: relative;
+          right: toRem(10);
+          bottom: (2);
+          vertical-align: center;
+          color: #2a3cb7;
+          font-family: "Font Awesome 6 Free";
+          font-size: toRem(12);
+          font-weight: 400;
+          content: "\f017";
+        }
+      }
+
+      :nth-child(3) {
+        @extend :nth-child(2);
+
+        &::before {
+          font-weight: 600;
+          bottom: toRem(3);
+          content: "\f3c5";
+        }
+      }
+
+      h6 {
+        margin-top: toRem(20);
+        font-weight: 300;
+        @include textProperty(18, black, $font-family-header);
+
+        &::after {
+          position: relative;
+          left: toRem(15);
+          color: #2a3cb7;
+          font-family: "Font Awesome 6 Free";
+          font-size: toRem(12);
+          font-weight: 600;
+          content: "\f054";
+        }
+      }
+    }
+  }
+}
+
+// < !-- SEVEN SECTION FNISH -->
+
+// < !-- FOOTER START -->
+.footer-first-column {
+  background-color: #1c1c1c;
+  padding: toRem(100) toRem(50);
+}
+
+.box-first-col {
+  background-color: #1c1c1c;
+  padding: toRem(30);
+  margin-left: toRem(50);
+
+  @include media-breakpoint-up(md) {
+    margin-left: 0;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  p {
+    font-weight: 400;
+    line-height: 1.62;
+    @include textProperty(16, #cccc, $font-family-text);
+  }
+
+  .icon-social {
+    font-size: toRem(22);
+    letter-spacing: toRem(15);
+
+    .fa-facebook {
+      color: #E8C410;
+    }
+
+    .fa-twitter {
+      color: #002592;
+    }
+
+    .fa-pinterest {
+      color: white;
+    }
+  }
+
+  .box-subcribe {
+    input {
+      background-color: transparent;
+      border: 1px #616161 solid;
+      font-weight: 400;
+      height: toRem(55);
+      max-width: 100%;
+      border-radius: 0px !important;
+      outline: none;
+      padding: toRem(13) toRem(75) toRem(13) toRem(22);
+      position: relative;
+      @include textProperty(17, #9999, $font-family-text);
+
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    right: toRem(70);
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    color: $white-color;
+    font-weight: 300;
+    border: none;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    &::after {
+      position: relative;
+      left: toRem(5);
+      color: $white-color;
+      font-family: "Font Awesome 6 Free";
+      font-size: toRem(10);
+      font-weight: 600;
+      content: "\f054";
+    }
+  }
+}
+
+.box-second-column {
+  .box-central {
+    padding: 0 toRem(30) toRem(30) toRem(30);
+    max-width: toRem(300);
+
+    h4 {
+      font-weight: 400;
+      line-height: 1.12rem;
+      @include textProperty(25, $white-color, $font-family-header)
+    }
+
+    p {
+      line-height: 1.62rem;
+      font-weight: 400;
+      @include textProperty(16, #cccc, $font-family-text);
+    }
+
+    :nth-child(3) {
+      &::before {
+        position: relative;
+        right: toRem(8);
+        bottom: toRem(2);
+        color: $white-color;
+        font-family: "Font Awesome 6 Free";
+        font-size: toRem(15);
+        font-weight: 600;
+        content: "\f3c5";
+      }
+    }
+  }
+}
+
+.box-final-footer {
+  position: relative;
+  bottom: toRem(20);
+  right: toRem(70);
+
+  @include media-breakpoint-up(md) {
+    right: toRem(50);
+  }
+
+  h5 {
+    font-weight: 400;
+    line-height: 1.12rem;
+    @include textProperty(25, $white-color, $font-family-header)
+  }
+
+  ul {
+    list-style-type: none;
+    position: relative;
+    right: toRem(30);
+    font-weight: 400;
+    line-height: 1.62rem;
+    @include textProperty(16, #cccc, $font-family-text);
+  }
+
+  :nth-child(3):not(li) {
+    @include textProperty(16, #cccc, $font-family-text);
+
+    &:before {
+      position: relative;
+      right: toRem(10);
+      bottom: toRem(1);
+      color: #cccc;
+      font-family: "Font Awesome 6 Free";
+      font-size: toRem(13);
+      font-weight: 600;
+      content: "\f095";
+    }
+  }
+
+  :nth-child(4):not(li) {
+    @include textProperty(16, #cccc, $font-family-text);
+
+    &:before {
+      position: relative;
+      right: toRem(10);
+      bottom: toRem(1);
+      color: #cccc;
+      font-family: "Font Awesome 6 Free";
+      font-size: toRem(13);
+      font-weight: 600;
+      content: "\f0e0";
+    }
+  }
+}
+
+// < !-- FOOTER FINISH -->
+
+// < !-- BUTTON TOP START -->
+.button-top {
+  position: fixed;
+  padding: 0px;
+  width: toRem(50);
+  height: toRem(50);
+  right: toRem(50);
+  top: toRem(620);
+  background-color: $blue-violet;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  &::after {
+    position: relative;
+    top: toRem(10);
+    font-family: "Font Awesome 6 Free";
+    font-size: toRem(20);
+    font-weight: 600;
+    content: "\f077";
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $blue-violet;
+  }
+}
+
+// < !-- BUTTON TOP FINISH -->

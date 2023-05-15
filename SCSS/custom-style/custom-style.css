@@ -1,0 +1,831 @@
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Thin.woff2") format("woff2"), url("/Font/Jost/Jost-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-SemiBold.woff2") format("woff2"), url("/Font/Jost/Jost-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Black.woff2") format("woff2"), url("/Font/Jost/Jost-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Medium.woff2") format("woff2"), url("/Font/Jost/Jost-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-ExtraBoldItalic.woff2") format("woff2"), url("/Font/Jost/Jost-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Regular.woff2") format("woff2"), url("/Font/Jost/Jost-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Bold.woff2") format("woff2"), url("/Font/Jost/Jost-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-SemiBoldItalic.woff2") format("woff2"), url("/Font/Jost/Jost-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Italic.woff2") format("woff2"), url("/Font/Jost/Jost-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-ExtraBold.woff2") format("woff2"), url("/Font/Jost/Jost-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-ExtraLightItalic.woff2") format("woff2"), url("/Font/Jost/Jost-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-Light.woff2") format("woff2"), url("/Font/Jost/Jost-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-LightItalic.woff2") format("woff2"), url("/Font/Jost/Jost-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-MediumItalic.woff2") format("woff2"), url("/Font/Jost/Jost-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-BoldItalic.woff2") format("woff2"), url("/Font/Jost/Jost-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-ThinItalic.woff2") format("woff2"), url("/Font/Jost/Jost-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-ExtraLight.woff2") format("woff2"), url("/Font/Jost/Jost-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("/Font/Jost/Jost-BlackItalic.woff2") format("woff2"), url("/Font/Jost/Jost-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muli Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Regular"), url("/Font/Muli/Muli-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Italic"), url("/Font/Muli/Muli-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraLight"), url("/Font/Muli/Muli-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraLight Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraLight Italic"), url("/Font/Muli/Muli-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Light"), url("/Font/Muli/Muli-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Light Italic"), url("/Font/Muli/Muli-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli SemiBold"), url("/Font/Muli/Muli-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli SemiBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli SemiBold Italic"), url("/Font/Muli/Muli-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Bold"), url("/Font/Muli/Muli-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Bold Italic"), url("/Font/Muli/Muli-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraBold"), url("/Font/Muli/Muli-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraBold Italic"), url("/Font/Muli/Muli-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Black"), url("/Font/Muli/Muli-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Black Italic"), url("/Font/Muli/Muli-BlackItalic.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  outline-style: none;
+  border-style: none;
+}
+
+.navbar {
+  z-index: 1000;
+  background-color: #fff;
+}
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent;
+  }
+}
+.navbar .logo-white img {
+  max-width: 6.25rem;
+  max-height: 12.5rem;
+}
+.navbar .logo-black img {
+  max-width: 6.25rem;
+  max-height: 12.5rem;
+  position: relative;
+  right: 7.25rem;
+}
+.navbar .navbar-nav li a {
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  font-family: "Jost";
+}
+@media (min-width: 992px) {
+  .navbar .navbar-nav li a {
+    color: #fff;
+  }
+}
+.navbar .dropdown-menu {
+  border: none !important;
+  border-radius: 0px !important;
+}
+.navbar .dropdown-menu li a {
+  margin: 0.75rem;
+  font-weight: 400;
+  color: #a6a6a6;
+}
+.navbar form button {
+  position: relative;
+  padding: 0.9375rem 2.5rem;
+  border: none !important;
+  background-color: #2a3ab6;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.navbar form button::after {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75rem;
+  font-weight: 600;
+  content: "\f106";
+}
+.navbar form button:hover, .navbar form button:focus, .navbar form button:active {
+  background-color: #2a3ab6;
+}
+.navbar .dropdown-item li {
+  color: black;
+}
+
+.carousel-inner {
+  max-height: 80vmin !important;
+  position: relative;
+}
+.carousel-inner .carousel-caption {
+  position: absolute;
+  top: 20%;
+}
+.carousel-inner p {
+  letter-spacing: 0.3125rem;
+  font-size: 0.6875rem;
+  color: #fff;
+  font-family: "Muli Regular";
+}
+.carousel-inner h5 {
+  font-size: 1.875rem;
+  color: #fff;
+  font-family: "Muli Regular";
+}
+@media (min-width: 576px) {
+  .carousel-inner h5 {
+    font-size: calc(1.625rem + 4.5vw);
+  }
+}
+@media (min-width: 576px) and (min-width: 1200px) {
+  .carousel-inner h5 {
+    font-size: 5rem;
+  }
+}
+.carousel-inner button {
+  position: relative;
+  padding: 0.9375rem 2.5rem;
+  border: none !important;
+  background-color: #2a3ab6;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.carousel-inner button::after {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75rem;
+  font-weight: 600;
+  content: "\f106";
+}
+.carousel-inner button:hover, .carousel-inner button:focus, .carousel-inner button:active {
+  background-color: #2a3ab6;
+}
+
+.description-section .text-title p {
+  font-weight: 700;
+  line-height: 1.62rem;
+  letter-spacing: 0.3rem;
+  font-size: 0.6875rem;
+  color: #ef4623;
+  font-family: "Muli Regular";
+}
+.description-section .text-head h2 {
+  font-weight: 400;
+  line-height: 4.375rem;
+  font-size: 3rem;
+  color: black;
+  font-family: "Jost";
+}
+.description-section .text-sub p {
+  font-weight: 500;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-family: "Muli Regular";
+}
+
+.accordion .accordion-header button:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+}
+.accordion .accordion-header button.collapsed:after {
+  content: "\f067";
+}
+.accordion .accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion .accordion-item:not(.collapsed) {
+  width: 100%;
+  border: none;
+  border-bottom: 0.5px #a6a6a6 solid;
+}
+.accordion .accordion-item:after {
+  border-bottom: 2px red solid;
+}
+.accordion .accordion-item h2 button {
+  line-height: 1.1em;
+  padding: 1.375rem 0.625rem 1.5625rem 0rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: black;
+  font-family: "Jost";
+}
+.accordion .accordion-body {
+  font-weight: 400;
+  line-height: 1.62rem;
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-family: "Muli Regular";
+  border-top: 2px #2a3ab6 solid;
+}
+
+.box-img {
+  background-image: url(Foto/Background-Image/virtual.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+}
+.box-img button {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  background-color: #2a3ab6;
+  border: none !important;
+  font-size: 2.125rem;
+  color: #fff;
+  font-family: "Jost";
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .box-img button {
+    font-size: 2rem;
+  }
+}
+.box-img button:hover {
+  background-color: #2a3ab6;
+  scale: 1.2;
+}
+
+.modal {
+  margin-top: 9.375rem;
+}
+.modal .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.description-five .text-title p {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  line-height: 1.62rem;
+  font-size: 0.6875rem;
+  color: #ef4623;
+  font-family: "Muli Regular";
+}
+.description-five .text-head h2 {
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 2.125rem;
+  color: black;
+  font-family: "Jost";
+}
+.description-five .text-sub p {
+  font-weight: 400;
+  line-height: 1.62rem;
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-family: "Muli Regular";
+}
+
+.card {
+  max-width: 18rem;
+  margin-bottom: 2.5rem;
+  border: none !important;
+  border-radius: 0px !important;
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 576px) {
+  .card {
+    max-width: 30rem;
+  }
+}
+.card .card-body {
+  border-radius: 0px;
+}
+.card .card-body h5 {
+  font-weight: 500;
+  line-height: 1.1rem;
+  margin: 1.875rem 0 0;
+  font-size: 1.25rem;
+  color: black;
+  font-family: "Jost";
+}
+.card .card-body p {
+  font-weight: 700;
+  line-height: 1.62rem;
+  margin: 0.625rem 0;
+  font-size: 0.6875rem;
+  color: #a6a6a6;
+  font-family: "Muli Regular";
+}
+.card .card-img-top {
+  border-radius: 0px;
+}
+
+.bg-six-section,
+.footer-bg {
+  background-color: #282828;
+}
+
+.img-container {
+  padding: 0px !important;
+}
+
+.box-image-six img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.six-section-description {
+  padding: 0.9375rem;
+  overflow-wrap: break-word;
+  max-width: 37.5rem;
+  margin: 0.5rem 0;
+}
+.six-section-description .text-title p {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 0.6875rem;
+  color: #ef4623;
+  font-family: "Muli Regular";
+}
+.six-section-description .text-head h2 {
+  font-weight: 300;
+  line-height: 2.5rem;
+  font-size: 2.125rem;
+  color: #fff;
+  font-family: "Jost";
+  font-size: calc(1.337rem + 1.044vw);
+}
+@media (min-width: 1200px) {
+  .six-section-description .text-head h2 {
+    font-size: 2.12rem;
+  }
+}
+.six-section-description button {
+  position: relative;
+  padding: 0.9375rem 2.5rem;
+  border: none !important;
+  background-color: #2a3ab6;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.six-section-description button::after {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75rem;
+  font-weight: 600;
+  content: "\f106";
+}
+.six-section-description button:hover, .six-section-description button:focus, .six-section-description button:active {
+  background-color: #2a3ab6;
+}
+
+.description-seven-section {
+  max-width: 37.5rem;
+}
+.description-seven-section .text-title p {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  line-height: 1.62rem;
+  font-size: 0.6875rem;
+  color: #ef4623;
+  font-family: "Muli Regular";
+}
+.description-seven-section .text-head h2 {
+  font-weight: 400;
+  line-height: 1.12rem;
+  overflow-wrap: break-word;
+  font-size: 3.4375rem;
+  color: black;
+  font-family: "Jost";
+  font-size: calc(1.468rem + 2.616vw);
+}
+@media (min-width: 1200px) {
+  .description-seven-section .text-head h2 {
+    font-size: 3.43rem;
+  }
+}
+.description-seven-section .text-sub p {
+  font-weight: 400;
+  line-height: 1.62rem;
+  margin: 0.375rem 0;
+  font-size: 1.1875rem;
+  color: #a6a6a6;
+  font-family: "Muli Regular";
+}
+
+.card-timetables .card {
+  max-width: 25rem;
+}
+.card-timetables .card .card-body {
+  position: relative;
+  left: 0.625rem;
+  margin: 0.9375rem;
+}
+.card-timetables .card .card-body h5 {
+  font-weight: 500;
+  line-height: 1.12rem;
+  font-size: 1.5625rem;
+  color: black;
+  font-family: "Jost";
+}
+.card-timetables .card .card-body :nth-child(2), .card-timetables .card .card-body :nth-child(3) {
+  position: relative;
+  font-weight: 400;
+  line-height: 1.62rem;
+  margin: 0.625rem 0.3125rem;
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-family: "Muli Regular";
+}
+.card-timetables .card .card-body :nth-child(2)::before, .card-timetables .card .card-body :nth-child(3)::before {
+  position: relative;
+  right: 0.625rem;
+  bottom: 2;
+  vertical-align: center;
+  color: #2a3cb7;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75rem;
+  font-weight: 400;
+  content: "\f017";
+}
+.card-timetables .card .card-body :nth-child(3)::before {
+  font-weight: 600;
+  bottom: 0.1875rem;
+  content: "\f3c5";
+}
+.card-timetables .card .card-body h6 {
+  margin-top: 1.25rem;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: black;
+  font-family: "Jost";
+}
+.card-timetables .card .card-body h6::after {
+  position: relative;
+  left: 0.9375rem;
+  color: #2a3cb7;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.75rem;
+  font-weight: 600;
+  content: "\f054";
+}
+
+.footer-first-column {
+  background-color: #1c1c1c;
+  padding: 6.25rem 3.125rem;
+}
+
+.box-first-col {
+  background-color: #1c1c1c;
+  padding: 1.875rem;
+  margin-left: 3.125rem;
+}
+@media (min-width: 768px) {
+  .box-first-col {
+    margin-left: 0;
+  }
+}
+.box-first-col img {
+  max-width: 50%;
+}
+.box-first-col p {
+  font-weight: 400;
+  line-height: 1.62;
+  font-size: 1rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Muli Regular";
+}
+.box-first-col .icon-social {
+  font-size: 1.375rem;
+  letter-spacing: 0.9375rem;
+}
+.box-first-col .icon-social .fa-facebook {
+  color: #E8C410;
+}
+.box-first-col .icon-social .fa-twitter {
+  color: #002592;
+}
+.box-first-col .icon-social .fa-pinterest {
+  color: white;
+}
+.box-first-col .box-subcribe input {
+  background-color: transparent;
+  border: 1px #616161 solid;
+  font-weight: 400;
+  height: 3.4375rem;
+  max-width: 100%;
+  border-radius: 0px !important;
+  outline: none;
+  padding: 0.8125rem 4.6875rem 0.8125rem 1.375rem;
+  position: relative;
+  font-size: 1.0625rem;
+  color: rgba(153, 153, 153, 0.6);
+  font-family: "Muli Regular";
+}
+.box-first-col .box-subcribe input:focus {
+  box-shadow: none !important;
+}
+.box-first-col button {
+  position: absolute;
+  right: 4.375rem;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  color: #fff;
+  font-weight: 300;
+  border: none;
+}
+.box-first-col button:hover {
+  background-color: transparent !important;
+}
+.box-first-col button::after {
+  position: relative;
+  left: 0.3125rem;
+  color: #fff;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.625rem;
+  font-weight: 600;
+  content: "\f054";
+}
+
+.box-second-column .box-central {
+  padding: 0 1.875rem 1.875rem 1.875rem;
+  max-width: 18.75rem;
+}
+.box-second-column .box-central h4 {
+  font-weight: 400;
+  line-height: 1.12rem;
+  font-size: 1.5625rem;
+  color: #fff;
+  font-family: "Jost";
+}
+.box-second-column .box-central p {
+  line-height: 1.62rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Muli Regular";
+}
+.box-second-column .box-central :nth-child(3)::before {
+  position: relative;
+  right: 0.5rem;
+  bottom: 0.125rem;
+  color: #fff;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.9375rem;
+  font-weight: 600;
+  content: "\f3c5";
+}
+
+.box-final-footer {
+  position: relative;
+  bottom: 1.25rem;
+  right: 4.375rem;
+}
+@media (min-width: 768px) {
+  .box-final-footer {
+    right: 3.125rem;
+  }
+}
+.box-final-footer h5 {
+  font-weight: 400;
+  line-height: 1.12rem;
+  font-size: 1.5625rem;
+  color: #fff;
+  font-family: "Jost";
+}
+.box-final-footer ul {
+  list-style-type: none;
+  position: relative;
+  right: 1.875rem;
+  font-weight: 400;
+  line-height: 1.62rem;
+  font-size: 1rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Muli Regular";
+}
+.box-final-footer :nth-child(3):not(li) {
+  font-size: 1rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Muli Regular";
+}
+.box-final-footer :nth-child(3):not(li):before {
+  position: relative;
+  right: 0.625rem;
+  bottom: 0.0625rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.8125rem;
+  font-weight: 600;
+  content: "\f095";
+}
+.box-final-footer :nth-child(4):not(li) {
+  font-size: 1rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Muli Regular";
+}
+.box-final-footer :nth-child(4):not(li):before {
+  position: relative;
+  right: 0.625rem;
+  bottom: 0.0625rem;
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "Font Awesome 6 Free";
+  font-size: 0.8125rem;
+  font-weight: 600;
+  content: "\f0e0";
+}
+
+.button-top {
+  position: fixed;
+  padding: 0px;
+  width: 3.125rem;
+  height: 3.125rem;
+  right: 3.125rem;
+  top: 38.75rem;
+  background-color: #2a3ab6;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.button-top::after {
+  position: relative;
+  top: 0.625rem;
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.25rem;
+  font-weight: 600;
+  content: "\f077";
+}
+.button-top:focus, .button-top:hover {
+  background-color: #2a3ab6;
+}/*# sourceMappingURL=custom-style.css.map */
